@@ -8,6 +8,7 @@ psycopg2-binary
 
 Use "pip install streamlit pandas numpy plotly wrds psycopg2-binary" in Powershell to install
 
+Link for streamlit:https://okdwtyratge5brvceq6hy4.streamlit.app/
 I highly recommend that you:
 Creat a file like this: Shaojie.yang_persional_assignment\.streamlit\secrets.toml
 and Enter your user name and password in it like this:
