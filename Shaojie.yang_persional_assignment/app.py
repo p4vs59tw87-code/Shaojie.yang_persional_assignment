@@ -77,7 +77,7 @@ if load_button:
     fig_hist = px.histogram(analyzed_data, x='daily_return', nbins=50,
                             title="Daily Return Histogram",
                             labels={'daily_return': 'Daily Return'})
-    fig_hist.update_xaxis(tickformat=".1%")
+    fig_hist.update_xaxes(tickformat=".1%")
     st.plotly_chart(fig_hist, width='stretch')
     
     # Data table
