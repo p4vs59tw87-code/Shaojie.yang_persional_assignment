@@ -10,7 +10,7 @@ Link for streamlit:https://yvmpaqjcoc6bytto5ha7bs.streamlit.app/
 
 ## Local Run
 
-Use the following code to install:
+Use the following code to install the requirements:
 
 ```powershell
 pip install -r requirements.txt
