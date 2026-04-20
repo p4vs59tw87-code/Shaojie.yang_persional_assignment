@@ -19,6 +19,6 @@ pip install -r requirements.txt
 Use the following code to run:
 
 ```powershell
-cd [your actual project folder path]
+cd [your actual project folder path with quotation marks]
 streamlit run app.py
 ```
