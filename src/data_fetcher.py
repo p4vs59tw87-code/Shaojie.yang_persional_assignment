@@ -18,11 +18,15 @@ def fetch_crsp_data(ticker, start_date, end_date, wrds_username, wrds_password):
             password=wrds_password
         )
         
-        # Find the permno for the given ticker
+        # Use the msenames table to get the permno for the given ticker
         query_permno = f"""
             SELECT permno, ticker, comnam 
-            FROM crsp.stocknames 
+            FROM crsp.msenames
             WHERE ticker = '{ticker}'
+              AND namedt <= '{end_date}'
+              AND (nameendt IS NULL OR nameendt >= '{start_date}')
+            ORDER BY namedt DESC
+            LIMIT 1
         """
         permno_df = pd.read_sql(query_permno, conn)
         
